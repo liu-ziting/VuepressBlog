@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>前端兼容性问题总结 | Liuziting</title>
+    <meta name="description" content="刘子亭、刘子亭的个人博客、liuziting">
+    <link rel="icon" href="/xiao.png">
+    
+    <link rel="preload" href="/assets/css/0.styles.fb783b39.css" as="style"><link rel="preload" href="/assets/js/app.09210330.js" as="script"><link rel="preload" href="/assets/js/2.3667e43c.js" as="script"><link rel="preload" href="/assets/js/20.560bacc9.js" as="script"><link rel="prefetch" href="/assets/js/10.d6196b5b.js"><link rel="prefetch" href="/assets/js/11.af5af82d.js"><link rel="prefetch" href="/assets/js/12.29c87095.js"><link rel="prefetch" href="/assets/js/13.a03499d4.js"><link rel="prefetch" href="/assets/js/14.e1714183.js"><link rel="prefetch" href="/assets/js/15.d2c2cc5f.js"><link rel="prefetch" href="/assets/js/16.d5304146.js"><link rel="prefetch" href="/assets/js/17.b243b167.js"><link rel="prefetch" href="/assets/js/18.86380bfe.js"><link rel="prefetch" href="/assets/js/19.1251a3ba.js"><link rel="prefetch" href="/assets/js/21.52c2719d.js"><link rel="prefetch" href="/assets/js/22.ec2c36c6.js"><link rel="prefetch" href="/assets/js/23.e8bff145.js"><link rel="prefetch" href="/assets/js/24.80c1fa00.js"><link rel="prefetch" href="/assets/js/25.a1c06dc3.js"><link rel="prefetch" href="/assets/js/26.e9dd1728.js"><link rel="prefetch" href="/assets/js/27.4048215d.js"><link rel="prefetch" href="/assets/js/28.da39c5e5.js"><link rel="prefetch" href="/assets/js/29.b119dfe0.js"><link rel="prefetch" href="/assets/js/3.8285b36c.js"><link rel="prefetch" href="/assets/js/30.6a8ba3df.js"><link rel="prefetch" href="/assets/js/31.326ca66d.js"><link rel="prefetch" href="/assets/js/32.8de59939.js"><link rel="prefetch" href="/assets/js/33.78ce8c11.js"><link rel="prefetch" href="/assets/js/34.5b01c8b9.js"><link rel="prefetch" href="/assets/js/35.24cdce06.js"><link rel="prefetch" href="/assets/js/36.dcf24a99.js"><link rel="prefetch" href="/assets/js/37.30439bea.js"><link rel="prefetch" href="/assets/js/38.3afd3027.js"><link rel="prefetch" href="/assets/js/39.1103a4e8.js"><link rel="prefetch" href="/assets/js/4.62f964f8.js"><link rel="prefetch" href="/assets/js/40.2b468dee.js"><link rel="prefetch" href="/assets/js/41.a2e94a8c.js"><link rel="prefetch" href="/assets/js/42.c722f69e.js"><link rel="prefetch" href="/assets/js/43.9163e98f.js"><link rel="prefetch" href="/assets/js/44.dd333262.js"><link rel="prefetch" href="/assets/js/45.3d4f4fe2.js"><link rel="prefetch" href="/assets/js/46.6ac51aac.js"><link rel="prefetch" href="/assets/js/47.7e39d44d.js"><link rel="prefetch" href="/assets/js/48.53be76db.js"><link rel="prefetch" href="/assets/js/49.93d94cea.js"><link rel="prefetch" href="/assets/js/5.f034a803.js"><link rel="prefetch" href="/assets/js/50.d5f8efaa.js"><link rel="prefetch" href="/assets/js/51.04461a6d.js"><link rel="prefetch" href="/assets/js/52.40b6e90b.js"><link rel="prefetch" href="/assets/js/53.7be52e6b.js"><link rel="prefetch" href="/assets/js/54.0015c84f.js"><link rel="prefetch" href="/assets/js/55.a6e9a382.js"><link rel="prefetch" href="/assets/js/56.ba3ab489.js"><link rel="prefetch" href="/assets/js/57.218c2b54.js"><link rel="prefetch" href="/assets/js/6.c72fd4a2.js"><link rel="prefetch" href="/assets/js/7.0451413e.js"><link rel="prefetch" href="/assets/js/8.bb16dd54.js"><link rel="prefetch" href="/assets/js/9.f15ad4bf.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.fb783b39.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/xiao.png" alt="Liuziting" class="logo"> <span class="site-name can-hide">Liuziting</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="分类" class="dropdown-title"><span class="title">分类</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/article/frontend/Adminair.html" class="nav-link">文章</a></li><li class="dropdown-item"><!----> <a href="/pages/project.html" class="nav-link">项目</a></li><li class="dropdown-item"><!----> <a href="/pages/software/index.html" class="nav-link">软件</a></li><li class="dropdown-item"><!----> <a href="/pages/video.html" class="nav-link">航拍</a></li><li class="dropdown-item"><!----> <a href="https://eleven.lihail.cn" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  萌宠
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div><div class="nav-item"><a href="/pages/about.html" class="nav-link">关于我</a></div><div class="nav-item"><a href="/pages/team.html" class="nav-link">团队项目</a></div><div class="nav-item"><a href="https://bat.lihail.cn" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  图传工具
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="http://bat.easy.echosite.cn" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  个人云盘
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/liu-ziting" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="分类" class="dropdown-title"><span class="title">分类</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/article/frontend/Adminair.html" class="nav-link">文章</a></li><li class="dropdown-item"><!----> <a href="/pages/project.html" class="nav-link">项目</a></li><li class="dropdown-item"><!----> <a href="/pages/software/index.html" class="nav-link">软件</a></li><li class="dropdown-item"><!----> <a href="/pages/video.html" class="nav-link">航拍</a></li><li class="dropdown-item"><!----> <a href="https://eleven.lihail.cn" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  萌宠
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div><div class="nav-item"><a href="/pages/about.html" class="nav-link">关于我</a></div><div class="nav-item"><a href="/pages/team.html" class="nav-link">团队项目</a></div><div class="nav-item"><a href="https://bat.lihail.cn" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  图传工具
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="http://bat.easy.echosite.cn" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  个人云盘
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/liu-ziting" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>后台管理系统</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/article/frontend/Adminair.html" class="sidebar-link">1、Vue+El构建的后台管理系统</a></li><li><a href="/pages/article/frontend/Layui.html" class="sidebar-link">2、基于Layui的博客后台管理系统</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>CSS特效技巧</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/article/css/move.html" class="sidebar-link">动</a></li><li><a href="/pages/article/css/quiet.html" class="sidebar-link">静</a></li><li><a href="/pages/article/css/skill.html" class="sidebar-link">技巧</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Js相关操作</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/article/js/dom.html" class="sidebar-link">文档对象</a></li><li><a href="/pages/article/js/bom.html" class="sidebar-link">浏览器对象</a></li><li><a href="/pages/article/js/array.html" class="sidebar-link">数组</a></li><li><a href="/pages/article/js/number.html" class="sidebar-link">数字操作</a></li><li><a href="/pages/article/js/algorithm.html" class="sidebar-link">算法</a></li><li><a href="/pages/article/js/cookie.html" class="sidebar-link">cookie</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Python</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/article/python/Python.html" class="sidebar-link">1、微信防撤回的监听</a></li><li><a href="/pages/article/python/pip.html" class="sidebar-link">2、pip相关操作命令</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Git</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/article/git/git.html" class="sidebar-link">1、Git命令行相关操作</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>博客搭建</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/article/blog/Hexo.html" class="sidebar-link">1、最快的 Hexo 博客搭建方法</a></li><li><a href="/pages/article/blog/Wiki.html" class="sidebar-link">2、Wiki 知识库管理搭建</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>调试工具</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/article/tool/Natapp.html" class="sidebar-link">1、内网穿透工具natapp</a></li><li><a href="/pages/article/tool/Eruda.html" class="sidebar-link">2、移动端调试神器eruda</a></li><li><a href="/pages/article/tool/Vconsole.html" class="sidebar-link">3、移动端调试神器vconsole</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>网络知识</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/article/network/basic.html" class="sidebar-link">1、网络基础知识</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>开发流程</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/article/blog/Wx.html" class="sidebar-link">1、微信公众号开发流程</a></li><li><a href="/pages/article/blog/Dd.html" class="sidebar-link">2、钉钉微应用接入</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>问题汇总</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/article/frontend/Vue.html" class="sidebar-link">1、Vue相关开源项目库汇总</a></li><li><a href="/pages/article/frontend/Jrx.html" class="active sidebar-link">2、前端兼容性问题总结</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/article/frontend/Jrx.html#html-篇" class="sidebar-link">HTML 篇</a></li><li class="sidebar-sub-header"><a href="/pages/article/frontend/Jrx.html#css-篇" class="sidebar-link">css 篇</a></li></ul></li><li><a href="/pages/article/frontend/Js.html" class="sidebar-link">3、常用js方法整理</a></li><li><a href="/pages/article/frontend/Fx.html" class="sidebar-link">4、移动端键盘遮住输入框问题</a></li><li><a href="/pages/article/frontend/Bsx.html" class="sidebar-link">5、ios返回后页面不刷新的问题</a></li><li><a href="/pages/article/frontend/Jz.html" class="sidebar-link">6、多种方法实现水平居中垂直居中</a></li><li><a href="/pages/article/frontend/Html.html" class="sidebar-link">7、你不知道的HTML</a></li><li><a href="/pages/article/frontend/Ajax.html" class="sidebar-link">8、ajax长轮询、轮询应用和介绍</a></li><li><a href="/pages/article/frontend/filter.html" class="sidebar-link">9、各大站通用首页变灰代码</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>其他文章</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/article/other/Tt.html" class="sidebar-link">1、头条是如何挖掘多级朋友圈关系链的</a></li><li><a href="/pages/article/other/Hyjs.html" class="sidebar-link">2、微信群里各种「好友加速」真的可以加速成功吗？</a></li><li><a href="/pages/article/other/Jj.html" class="sidebar-link">3、基金新手入门必看知识点</a></li><li><a href="/pages/article/other/Kf.html" class="sidebar-link">4、Facebook 上一位大佬发表的代码看法</a></li><li><a href="/pages/article/other/Qkl.html" class="sidebar-link">5、浅谈区块链技术</a></li><li><a href="/pages/article/other/Bn.html" class="sidebar-link">6、JavaScript和地球变暖的关系</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>琐碎生活</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/article/life/Pz.html" class="sidebar-link">1、你比我想的更偏执</a></li><li><a href="/pages/article/life/Sd.html" class="sidebar-link">2、你们觉得这个时代好还是父母那个时代好？</a></li><li><a href="/pages/article/life/Xh.html" class="sidebar-link">3、喜欢是多么不靠谱的事情</a></li><li><a href="/pages/article/life/Dd.html" class="sidebar-link">4、滴血的滴滴：你想知道的，正是他不愿说的</a></li><li><a href="/pages/article/life/Jk.html" class="sidebar-link">5、从这件事情为什么发生在我身上到这件事情教会我什么</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>年度总结</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/article/life/2018.html" class="sidebar-link">1、2018年度总结</a></li><li><a href="/pages/article/life/2019.html" class="sidebar-link">2、2019年度总结</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="前端兼容性问题总结"><a href="#前端兼容性问题总结" class="header-anchor">#</a> 前端兼容性问题总结</h1> <h2 id="html-篇"><a href="#html-篇" class="header-anchor">#</a> HTML 篇</h2> <h3 id="样式兼容性问题"><a href="#样式兼容性问题" class="header-anchor">#</a> 样式兼容性问题</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;!-- IE 按 Edge 模式渲染 --&gt;
+&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=Edge&quot; /&gt;
+&lt;!-- IE 8 9 10 按 IE7 模式渲染 --&gt;
+&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=Emulate7&quot; /&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h3 id="怪异模式"><a href="#怪异模式" class="header-anchor">#</a> 怪异模式</h3> <p>怪异模式是没有遵守 W3C 规范的一种兼容模式，其中的 width 是包括 contentWidth, 左右padding, 左右border 在内的全部范围(height 也一样)，类似于 box-sizing: border-box;，而且 table 的 font-size 不能从父元素继承。以下情况会触发浏览器怪异模式(Quirks Mode):</p> <ul><li>没写 DOCTYPE 触发怪异模式</li> <li>在&lt;!DOCTYPE ...&gt;前加&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;, IE6 下会触发怪异模式</li> <li>在&lt;!DOCTYPE ...&gt;前加入, IE7进入怪异模式</li> <li>
+&lt;!DOCTYPE ...&gt;前有任何非空字符，会在IE6 下会触发怪异模式
+</li> <li>
+&lt;!DOCTYPE ...&gt;前有 XML ，在IE7 下不会触发怪异模式，但不能有其他非空字符
+</li></ul> <p>检查document.compatMode,可以查看浏览器工作在哪个模式：值BackCompat为怪异模式，值CSS1Compat为标准模式</p> <h3 id="display-inline-block-元素间有间隙"><a href="#display-inline-block-元素间有间隙" class="header-anchor">#</a> display:inline-block 元素间有间隙</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;!-- 以下的 li 元素是 display: inline; 类型的 --&gt;
+&lt;!-- 这样写元素之间有间隙 --&gt;
+&lt;ul&gt;
+  &lt;li&gt;apple&lt;/li&gt;
+  &lt;li&gt;banana&lt;/li&gt;
+  &lt;li&gt;pineapple&lt;/li&gt;
+  &lt;li&gt;peach&lt;/li&gt;
+  &lt;li&gt;orange&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- 换个写法解决问题--&gt;
+&lt;ul&gt;
+  &lt;li&gt;apple&lt;/li&gt;&lt;li&gt;
+  banana&lt;/li&gt;&lt;li&gt;
+  pineapple&lt;/li&gt;&lt;li&gt;
+  peach&lt;/li&gt;&lt;li&gt;
+  orange&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><h3 id="ie可能出现的文档样式短暂失效问题"><a href="#ie可能出现的文档样式短暂失效问题" class="header-anchor">#</a> IE可能出现的文档样式短暂失效问题</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;head&gt;
+    &lt;!-- meta部分 --&gt;
+    &lt;title&gt;&lt;/title&gt;
+    &lt;!-- 可能的script部分 --&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;&lt;/script&gt;   &lt;!-- 关键：添加一个空标签 --&gt;
+    &lt;!-- link部分 --&gt;
+&lt;/head&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h2 id="css-篇"><a href="#css-篇" class="header-anchor">#</a> css 篇</h2> <h3 id="双倍间距问题"><a href="#双倍间距问题" class="header-anchor">#</a> 双倍间距问题</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>/*一下代码在 IE6 中会出现双倍间距*/
+#box{
+  float: left;
+  margin: 10px;
+}
+
+//解决方法
+#box{
+  float: left;
+  margin: 10px;
+  display: inline;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h3 id="错位问题"><a href="#错位问题" class="header-anchor">#</a> 错位问题</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>/*IE6中，这样的多个盒子并列时会发生向下偏移，应该对偏移的盒子添加负 margin-top 进行修正*/
+.box{
+  float: left;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h3 id="e6-奇数宽高问题"><a href="#e6-奇数宽高问题" class="header-anchor">#</a> E6 奇数宽高问题</h3> <p>IE6 中盒子的宽(width) 和高(height)设置为奇数时会有 bug，尽量设置为偶数即可。</p> <h3 id="ie6-peekaboo-bug"><a href="#ie6-peekaboo-bug" class="header-anchor">#</a> IE6 Peekaboo Bug</h3> <p>一个 div#top 中加入一个 div#float 向左浮动，然后加入一个或多个 div, 直到清除浮动为止：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;style&gt;
+#top{
+    border: dotted 2px black;
+    background: #eee;    /*top有背景*/
+}
+#float{
+    height: 196px;
+    width: 196px;
+    border: 2px solid red;
+}
+.border{
+    border: 2px solid green;
+}
+.clear{
+    clear: both;
+    border: 2px solid blue;
+}
+&lt;/style&gt;
+&lt;body&gt;
+    &lt;div id=&quot;top&quot;&gt;
+        &lt;div id=&quot;float&quot;&gt;float div&lt;/div&gt;
+        &lt;!-- 这以下在 IE6 中不能正常显示 --&gt;
+        &lt;div class=&quot;border&quot;&gt;inside-div text!&lt;/div&gt;
+        &lt;div class=&quot;border&quot;&gt;inside-div text!&lt;/div&gt;
+        &lt;!-- 这以上在 IE6 中不能正常显示 --&gt;
+        &lt;div class=&quot;clear&quot;&gt;clear div&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br></div></div><p>解决方法，给 #top 一个 height 或 width ：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>#top{
+    height: 300px;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h3 id="盒子坍塌"><a href="#盒子坍塌" class="header-anchor">#</a> 盒子坍塌</h3> <p>这个问题比较普遍，在盒内层元素设置外边距时会发生</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>/*发生盒子坍塌*/
+#box{
+  height: 300px;
+}
+#box .inner-box{
+  margin:20px;
+}
+
+/*修正*/
+#box{
+  height: 300px;
+  margin-top: -20px;
+}
+#box .inner-box{
+  margin:20px;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><h3 id="文字大小"><a href="#文字大小" class="header-anchor">#</a> 文字大小</h3> <p>字体大小在不同浏览上不一致。例如font-size:14px，在 IE 中的实际行高是16px，下面有3px留白；在 Firefox 中的实际行高是17px，下面有3px留白，上边1px留白；在 opera 中就更不一样了。解决方式统一指定行高 line-height</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>html{
+  font-size: 14px;
+  line-height: 14px;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>另外，我们会遇到 font-size:62.5% 这样的定义，为了把默认的 16px 映射为 10px, 这样1em = 10px 更利于计算。</p> <h3 id="去除元素默认边距"><a href="#去除元素默认边距" class="header-anchor">#</a> 去除元素默认边距</h3> <p>有很多元素默认带有边距，对我们排版很不利。但利用通配符*去除边距存在性能问题，所以用下面语句清除默认边距</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{
+  margin: 0;
+  padding: 0;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h3 id="低版本-ie-高度限定失效"><a href="#低版本-ie-高度限定失效" class="header-anchor">#</a> 低版本 IE 高度限定失效</h3> <p>一般的元素指定高度属性 height 可以固定该元素高度，但在低版本 IE 中无法固定元素高度，该元素高度依然会被内容撑开，需要注意。(宽度也一样)</p> <h3 id="ie6-不支持-png-透明效果"><a href="#ie6-不支持-png-透明效果" class="header-anchor">#</a> IE6 不支持 png 透明效果</h3> <p>解决方式用滤镜</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>#box{
+  _background: none;
+  filter: progid:DXImageTransForm.Microsoft.AlphaImageLoader(src='路径');
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h3 id="firefox-的宽度问题"><a href="#firefox-的宽度问题" class="header-anchor">#</a> Firefox 的宽度问题</h3> <p>Firefox浏览器会的 body 比其他浏览器的 body 宽度小1个像素，注意设置其子元素（尤其 float 元素大小，防止排版混乱。</p> <h3 id="ie6中的吞吃问题"><a href="#ie6中的吞吃问题" class="header-anchor">#</a> IE6中的吞吃问题</h3> <p>IE6 中为上下2个 div 中的上一个地址设置背景时，下一个 div 也会带有背景。类似的还有 overflow:scroll 时，出现的滚动条不完整。应该 分别对在上方的 div 和滚动条不完整的 div 加 zoom: 1样式。</p> <h3 id="ie6-图片格式问题"><a href="#ie6-图片格式问题" class="header-anchor">#</a> IE6 图片格式问题</h3> <p>IE6 中的图片默认存在边框，应统一去除。同时图片下方会有空隙，用 font-size解决</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>img{
+  border: none;
+  font-size: 0;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h3 id="ie中无法定义1px高度这样的小盒子"><a href="#ie中无法定义1px高度这样的小盒子" class="header-anchor">#</a> IE中无法定义1px高度这样的小盒子</h3> <p>IE6 中的空元素高度不能低于19px，解决方式有四种：</p> <p>1、在元素中插入空注释 
+2、在元素中插入空格  
+3、加入 css: overflow:hidden;
+4、加入 css: font-size: 0;</p> <h3 id="ie6-z-index-失效"><a href="#ie6-z-index-失效" class="header-anchor">#</a> IE6 z-index 失效</h3> <p>当父元素已设置 z-index 属性后，子元素的 z-index 会失效。</p> <h3 id="ie6中-select-始终高于-div"><a href="#ie6中-select-始终高于-div" class="header-anchor">#</a> IE6中 select 始终高于 div</h3> <p>浮层 div 出现时隐藏 select，浮层 div 消失时再显示 select。</p> <h3 id="让-chrome-支持小于-12px-的字体"><a href="#让-chrome-支持小于-12px-的字体" class="header-anchor">#</a> 让 chrome 支持小于 12px 的字体</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>#box{
+  font-size: 8px;
+  -webkit-text-size-adjust: none;
+}
+/* 但是，上面这个方法 chrome27 以后就不能用了。但我们可以用 css3 解决这个问题 */
+#box{
+  font-size: 12px;
+  -webkit-transform: scale(0.75);
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h3 id="css-hack"><a href="#css-hack" class="header-anchor">#</a> CSS Hack</h3> <p>兼容性属性设置，注意书写顺序：优先写高等级浏览器支持方式、优先写支持浏览器多的方式</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>/*以 color 属性为例，注意书写顺序*/
+#box{
+  color: #f00;   //所有浏览器都支持
+  color: #0f0 !important;   //只有 IE6 无效
+  color: #00f\9;  //所有 IE 都有效
+  color: #ff0\0;  //IE8+ 有效
+  color: #f0f\9\0; //IE9+ 有效
+  *color: #fff;  //仅 IE6, IE7 有效
+  #color: #0ff;  //仅 IE6, IE7 有效
+  +color: #800;  //仅 IE6, IE7 有效
+  -color: #008;  //只有 IE6 有效
+  _color: #080;  //只有 IE6 有效
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p>由于后定义的属性覆盖先定义的属性，所有上面设置最后的效果为：</p> <p>IE6 为 #080
+IE7 为 #800
+IE8 为 #ff0
+IE9,10 为 #0f0
+其他 为 #f00</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/pages/article/frontend/Vue.html" class="prev">1、Vue相关开源项目库汇总</a></span> <span class="next"><a href="/pages/article/frontend/Js.html">3、常用js方法整理</a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><canvas id="vuepress-canvas-ribbon"></canvas><div class="cat-container" data-v-a13867c0><canvas id="vuepress-cat" width="280" height="250" class="live2d" data-v-a13867c0></canvas></div><div></div></div></div>
+    <script src="/assets/js/app.09210330.js" defer></script><script src="/assets/js/2.3667e43c.js" defer></script><script src="/assets/js/20.560bacc9.js" defer></script>
+  </body>
+</html>
