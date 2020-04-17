@@ -12,7 +12,11 @@
 
 **我一直致力于成为自由职业者，不受时空的束缚。**
 
-[love&peace](https://www.lihail.cn/)
+承接各类企业官网、APP、小程序、商城、系统维护、微信公众号开发等各种开发项目
+
+合作邮箱：Liuziting2014@163.com &nbsp; QQ： [1440193482](http://wpa.qq.com/msgrd?v=3&uin=1440193482&site=qq&menu=yes)
+
+love&peace
 
 
 

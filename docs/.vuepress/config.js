@@ -9,7 +9,7 @@ module.exports = {
 			href: '/xiao.png'
 		}], //浏览器的标签栏的网页图标
 	],
-	plugins: ['@vuepress/nprogress', 'ribbon', 'vuepress-plugin-cat', [
+	plugins: ['@vuepress/nprogress', 'vuepress-plugin-cat', [
 			"dynamic-title",
 			{
 				showIcon: "/favicon.ico",
@@ -51,10 +51,6 @@ module.exports = {
 						link: '/pages/article/frontend/Adminair.md'
 					},
 					{
-						text: '项目',
-						link: '/pages/project.md'
-					},
-					{
 						text: '软件',
 						link: '/pages/software/index.md'
 					},
@@ -73,7 +69,7 @@ module.exports = {
 				link: '/pages/about.md'
 			},
 			{
-				text: '团队项目',
+				text: '项目',
 				link: '/pages/team.md'
 			},
 			{
@@ -107,6 +103,7 @@ module.exports = {
 						['css/move.md', '动'],
 						['css/quiet.md', '静'],
 						['css/skill.md', '技巧'],
+						['css/unit.md', '单位'],
 					]
 				},
 				{
@@ -144,8 +141,27 @@ module.exports = {
 					collapsable: false, // 可选的, 默认值是 true,
 					sidebarDepth: 1, // 可选的, 默认值是 1
 					children: [
-						['blog/Hexo.md', '1、最快的 Hexo 博客搭建方法'],
-						['blog/Wiki.md', '2、Wiki 知识库管理搭建']
+						['blog/vuepress.md', '1、10分钟搭建vuepress博客'],
+						['blog/Hexo.md', '2、最快的 Hexo 博客搭建方法'],
+						['blog/Wiki.md', '3、Wiki 知识库管理搭建']
+					]
+				},
+				{
+					title: '问题汇总', // 必要的
+					collapsable: false, // 可选的, 默认值是 true,
+					sidebarDepth: 1, // 可选的, 默认值是 1
+					children: [
+						['frontend/Vue.md', '1、Vue相关开源项目库汇总'],
+						['frontend/Jrx.md', '2、前端兼容性问题总结'],
+						['frontend/Js.md', '3、常用js方法整理'],
+						['frontend/Fx.md', '4、移动端键盘遮住输入框问题'],
+						['frontend/Bsx.md', '5、ios返回后页面不刷新的问题'],
+						['frontend/Jz.md', '6、多种方法实现水平居中垂直居中'],
+						['frontend/Html.md', '7、你不知道的HTML'],
+						['frontend/Ajax.md', '8、ajax长轮询、轮询应用和介绍'],
+						['frontend/filter.md', '9、各大站通用首页变灰代码'],
+						['frontend/meta.md', '10、常见meta标签'],
+				
 					]
 				},
 				{
@@ -175,23 +191,7 @@ module.exports = {
 						['blog/Dd.md', '2、钉钉微应用接入']
 					]
 				},
-				{
-					title: '问题汇总', // 必要的
-					collapsable: false, // 可选的, 默认值是 true,
-					sidebarDepth: 1, // 可选的, 默认值是 1
-					children: [
-						['frontend/Vue.md', '1、Vue相关开源项目库汇总'],
-						['frontend/Jrx.md', '2、前端兼容性问题总结'],
-						['frontend/Js.md', '3、常用js方法整理'],
-						['frontend/Fx.md', '4、移动端键盘遮住输入框问题'],
-						['frontend/Bsx.md', '5、ios返回后页面不刷新的问题'],
-						['frontend/Jz.md', '6、多种方法实现水平居中垂直居中'],
-						['frontend/Html.md', '7、你不知道的HTML'],
-						['frontend/Ajax.md', '8、ajax长轮询、轮询应用和介绍'],
-						['frontend/filter.md', '9、各大站通用首页变灰代码'],
-
-					]
-				},
+				
 				{
 					title: '其他文章',
 					collapsable: false, // 可选的, 默认值是 true,
