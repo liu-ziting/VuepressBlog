@@ -18,11 +18,14 @@
     "vuepress-plugin-go-top": "^1.0.0",
     "vuepress-plugin-medium-zoom": "^1.1.8",
     "vuepress-plugin-reading-time": "^0.1.1",
-    "vuepress-plugin-ribbon": "^1.0.0"
+    "vuepress-plugin-ribbon": "^1.0.0",
+    "vuepress-plugin-right-anchor": "^0.1.2"
   },
   "dependencies": {
     "vuepress-plugin-cat": "^1.0.3",
     "vuepress-plugin-code-copy": "^1.0.6",
-    "vuepress-plugin-reading-progress": "^1.0.9"
+    "vuepress-plugin-contact-us": "^1.0.3",
+    "vuepress-plugin-reading-progress": "^1.0.9",
+    "vuepress-theme-yuu": "^2.2.1"
   }
 }

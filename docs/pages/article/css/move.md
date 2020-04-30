@@ -25,7 +25,7 @@
   top: 0px;
   transform: translateX(0%) translateY(-12px);
 }
-.poptip::after {
+.poptip::after {s
   font-size: 14px;
   color: #fff;
   content: attr(aria-controls);

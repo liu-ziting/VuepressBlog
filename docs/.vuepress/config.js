@@ -9,14 +9,14 @@ module.exports = {
 			href: '/xiao.png'
 		}], //浏览器的标签栏的网页图标
 	],
-	plugins: ['@vuepress/nprogress', 'vuepress-plugin-cat', [
+	plugins: ['@vuepress/nprogress', 'vuepress-plugin-cat','reading-progress' [
 			"dynamic-title",
 			{
 				showIcon: "/favicon.ico",
 				showText: "咦！又好了！",
 				hideIcon: "/failure.ico",
 				hideText: "(●—●)喔哟，崩溃啦！",
-				recoverTime: 2000
+				recoverTime: 1000
 			}
 		],
 		[
@@ -30,11 +30,8 @@ module.exports = {
 					scrollOffset: 0,
 				},
 			},
-		],
+		]
 	],
-	markdown: {
-		lineNumbers: true
-	},
 	serviceWorker: true,
 	themeConfig: {
 		logo: '/xiao.png',
